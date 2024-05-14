@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<servlet>
+		<servlet-name>Autenticacao</servlet-name>
+		<servlet-class>controller.ServletAutenticacao</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Autenticacao</servlet-name>
+		<url-pattern>/autenticacao</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Extrato</servlet-name>
+		<servlet-class>controller.ServletExtrato</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Extrato</servlet-name>
+		<url-pattern>/extrato</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Renovacao</servlet-name>
+		<servlet-class>controller.ServletRenovacao</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Renovacao</servlet-name>
+		<url-pattern>/renovacao</url-pattern>
+	</servlet-mapping>
+	
+	
+	<session-config>
+		<session-timeout>10</session-timeout>
+	</session-config>
+	
+</web-app>
